@@ -1,33 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Improved Quiz App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <div id="question-container">
-      <h3 id="question">Question</h3>
-      <div id="answer-buttons"></div>
-    </div>
-    <div id="quiz-info">
-      <div id="progress">Question 1 of 4</div>
-      <div id="score">Score: 0</div>
-      <div id="timer">Time Left: 10s</div>
-    </div>
-    <button id="next-btn" class="btn hide">Next</button>
-    <div id="result" class="hide">
-      <div id="score-breakdown">
-        <p>Correct Answers: <span id="correct-answers">0</span></p>
-        <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+ 
+    </style>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+       <div class="container">
+      <div id="question-container">
+        <h3 id="question">Question</h3>
+        <div id="answer-buttons"></div>
+        <div id="timer"></div> <!-- Timer display -->
+        <div id="progress">Question 1 of 4</div> <!-- Progress indicator -->
       </div>
-      <p id="final-score">Your final score: <span id="user-score">0</span> / 4</p>
+      <button id="next-btn" class="btn hide">Next</button>
+      <div id="result" class="hide"></div>
       <button id="restart-btn" class="btn hide">Restart</button>
     </div>
-  </div>
-  <script type="module" src="main.js"></script>
-</body>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
