@@ -1,4 +1,4 @@
-
+# Quiz App
 
 This is a simple quiz app built with Vite.js. It allows users to take a quiz and test their knowledge on various topics.
 
